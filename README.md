@@ -32,7 +32,8 @@ class App extends Component {
   }
 }
 ```
-vi package.json 
+vi package.json
+
 add proxy
 ```
 {
