@@ -33,7 +33,24 @@ class App extends Component {
 }
 ```
 vi package.json 
-
+add proxy
+```
+{
+  "name": "react-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-scripts": "0.9.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   },
   "proxy": "http://localhost:3001"
 }
+```
+
