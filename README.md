@@ -4,7 +4,7 @@ cd react-frontend
 npm start
 
 vi src/App.js
-
+```
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
@@ -31,7 +31,7 @@ class App extends Component {
     );
   }
 }
-
+```
 vi package.json 
 
   },
