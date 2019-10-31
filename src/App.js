@@ -3,10 +3,13 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+
   state = { users: [] } 			/*initialize state to empty array user */
 
   componentDidMount() {  
-    fetch('/users')  				/*correspond to users from the express server */ 
+    const ROOT_URL = process.env.REACT_APP_ROOT_URL; 
+    console.log(ROOT_URL)
+    fetch(`${ROOT_URL}/users`)  				/*correspond to users from the express server */ 
        .then(res => res.json())  		/*take response and parse into json*/
        .then(users => this.setState({ users })); /*take users and set it to state*/
   }
